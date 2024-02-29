@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import getProjects from '../api/get-projects';
 
 export default function useProjects() {
-  const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState([]);
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();

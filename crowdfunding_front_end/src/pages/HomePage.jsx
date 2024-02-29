@@ -4,6 +4,7 @@ import './HomePage.css';
 
 function HomePage() {
     const { projects } = useProjects();
+    console.log(projects)
 
     return (
       <div id="project-list">
