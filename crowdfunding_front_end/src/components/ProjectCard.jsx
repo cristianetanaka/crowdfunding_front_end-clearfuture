@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 function ProjectCard(props) {
-  const projectLink  = `project/${projectData.id}`;
+  const projectLink  = `project/${props.projectData.id}`;
 
   return (
     <div> 
       <Link to={projectLink}>
-        <img src={projectData.image} />
-        <h3>{projectData.title}</h3>
+        <img src={props.projectData.image} />
+        <h3>{props.projectData.title}</h3>
       </Link>
     </div>
   );

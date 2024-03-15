@@ -17,4 +17,4 @@ async function getProjects() {
     return await response.json();
   }
   
-  export default getProjects;
+export default getProjects;
